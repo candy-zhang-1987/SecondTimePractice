@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- testng-1.0.dtd约束文件 -->
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="前程贷">
+    <test name="注册，登录，充值">
+        <classes>
+            <class name="interfaceAutomation.testCases.RegisterTest"/>
+            <class name="interfaceAutomation.testCases.LoginTest"/>
+            <class name="interfaceAutomation.testCases.RechargeTest"/>
+        </classes>
+    </test>
+</suite>
