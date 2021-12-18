@@ -3,6 +3,7 @@ package interfaceAutomation.excelPojo;
 import cn.afterturn.easypoi.excel.annotation.Excel;
 
 public class ExcelPojo {
+    //123456
     @Excel(name="序号(caseId)")
     private String caseId;
     @Excel(name="接口模块(interface)")
