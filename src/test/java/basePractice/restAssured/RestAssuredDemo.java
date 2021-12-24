@@ -8,11 +8,11 @@ import static io.restassured.RestAssured.given;
 public class RestAssuredDemo {
     public static void main(String[] args) {
         //get request，first way to pass parameter
-        /*Response res =
+        Response res =
                 given().log().all().
                 when().get("http://www.httpbin.org/get?phone=13323234545&password=123456").
                 then().log().all().extract().response();
-        System.out.println(res);*/
+        System.out.println(res);
         //get request,second way to pass parameter
         /*Response res1 =
                 given().log().all().queryParam("mobilephone","13323234545").
@@ -41,8 +41,8 @@ public class RestAssuredDemo {
         //System.out.println(res1);
         System.out.println(res1.jsonPath().get("headers.Host")+"");*/
         //Gpath HTML路径解析
-        Response res = given().when().get("https://www.baidu.com/").then().log().body().extract().response();
-        System.out.println(res.htmlPath().get("html.head.title")+"");
-        System.out.println(res.htmlPath().get("html.head.meta[0].@http-equiv")+"");
+        //Response res = given().when().get("https://www.baidu.com/").then().log().body().extract().response();
+       // System.out.println(res.htmlPath().get("html.head.title")+"");
+        //System.out.println(res.htmlPath().get("html.head.meta[0].@http-equiv")+"");
     }
 }
